@@ -1,14 +1,2 @@
 language: java
-
-
-jdk:
-  - oraclejdk8
-  
-install: true
-
-script: 
-- mvn -f Risk-Group-Project/pom.xml test
-- "mvn -f Risk-Group-Project/pom.xml cobertura:cobertura"
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+jdk: oraclejdk8
