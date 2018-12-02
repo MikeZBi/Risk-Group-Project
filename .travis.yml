@@ -7,8 +7,8 @@ jdk:
 install: true
 
 script: 
-- mvn -f RiskBoardGame/pom.xml test
-- "mvn -f RiskBoardGame/pom.xml cobertura:cobertura"
+- mvn -f Risk-Group-Project/pom.xml test
+- "mvn -f Risk-Group-Project/pom.xml cobertura:cobertura"
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
